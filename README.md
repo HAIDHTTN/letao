@@ -1,5 +1,7 @@
 ### 总结
 
+<--- 更新--->
+
 1. 了解git的克隆和获取代码
 2. 了解项目的架构和目录结构
 3. 搭建项目的环境
@@ -39,96 +41,96 @@ git push -u origin gh-pages 把本地仓库的代码提交到远程的gh-pages�
 
 ## git的一些参数
 
-  1. git commit -m '提交日志'  -m  把暂存区的代码提交到本地仓库
-  2. git commit -am '提交日志' -am 把跟踪过的代码提交到本地仓库  
+    1. git commit -m '提交日志'  -m  把暂存区的代码提交到本地仓库
+    2. git commit -am '提交日志' -am 把跟踪过的代码提交到本地仓库  
      git add . git commit -m '提交'
-  3. git push -u origin master -u指的当前远程仓库和本地仓库相绑定
-  4. ssh-keygen -t rsa -C  -C表示注释
+    3. git push -u origin master -u指的当前远程仓库和本地仓库相绑定
+    4. ssh-keygen -t rsa -C  -C表示注释
 
 ## git查看版本和版本回退
 
-  1. git log 查看历史版本
-  2. git reset 进行版本的回退 
+    1. git log 查看历史版本
+    2. git reset 进行版本的回退 
      1. 回到上一个版本 git reset  --hard HEAD^
      2. 回到指定版本 git reset  --hard 版本号(4b80b68)
-     
+
 
 ## 电商全端项目 http://m.letao.com/
-  1. 卖鞋和包的一个综合电商平台
-  2. H5+C3+移动web+ajax   一起运用到项目
+    1. 卖鞋和包的一个综合电商平台
+    2. H5+C3+移动web+ajax   一起运用到项目
 
 
 ## 电商全端项目架构
 
-  1. 后台采用nodejs+mysql 搭建后台服务器  后台就是为了给前端提供接口
+    1. 后台采用nodejs+mysql 搭建后台服务器  后台就是为了给前端提供接口
       1. letao-master文件夹 除了public docs文件夹以外的都是后台的node的代码
       2. 这些代码的作用就是给前端提供API接口 接口的文档 docs文件夹
       3. 类似于 http://localhost:3000/category/queryTopCategory 的接口
-  2. 前端是采用移动端+PC后台管理系统 前端负责界面显示 
+    2. 前端是采用移动端+PC后台管理系统 前端负责界面显示 
       1. 前端移动端类似jd一样 负责页面的展示 多了数据交互
       2. 前端后台管理系统 阿里百秀管理前端的数据
       3. 前端 PC和移动端 都是负责页面展示 调用接口显示数据
-  3.  后端 nodejs是前端和数据库之间的桥梁  数据库 存储数据库
+    3. 后端 nodejs是前端和数据库之间的桥梁  数据库 存储数据库
       1. 后台 nodejs 操作数据 获取数据 制作API接口
-  4. 我们目前的任务就是负责前端界面展示以及获取nodejsAPI接口实现前后的交互
+    4. 我们目前的任务就是负责前端界面展示以及获取nodejsAPI接口实现前后的交互
       1. 目前我们只需要关系后台接口的文档 怎么调用即可 以及如何把数据渲染到页面
 
 
 ## 回顾项目环境搭建
 
-  1. 安装node  打开node js安装包 一路下一步安装 保证每个人都要装好
-  2. 导入数据库  打开phpstudy 启动  》 mysql管理器  》 选择导入 选择letao初始化.sql文件 选择编码为UTF-8 点击导入
-  3. 启动项目 打开项目文件夹3-源代码里面 letao-master 建议你都把letao-master放在一个很好找的目录比如桌面
-  4. 进入letao-master文件夹的根目录 输入npm start 回车 出现 node ./bin/www表示成功
+    1. 安装node  打开node js安装包 一路下一步安装 保证每个人都要装好
+    2. 导入数据库  打开phpstudy 启动  》 mysql管理器  》 选择导入 选择letao初始化.sql文件 选择编码为UTF-8 点击导入
+    3. 启动项目 打开项目文件夹3-源代码里面 letao-master 建议你都把letao-master放在一个很好找的目录比如桌面
+    4. 进入letao-master文件夹的根目录 输入npm start 回车 出现 node ./bin/www表示成功
      如果出现 Port 3000 is already in use 表示开启了多个黑窗 只留一个就可以
-  5. 导入一个书签 点击书签导入 选择导入以前的html文件 选择书签.html书签文件 导入  点击已导入书签栏里的乐淘 打开完整和自写版能够打开就表示启动成功
-  6. 后面访问页面的时候 使用书签里面的页面
+    5. 导入一个书签 点击书签导入 选择导入以前的html文件 选择书签.html书签文件 导入  点击已导入书签栏里的乐淘 打开完整和自写版能够打开就表示启动成功
+    6. 后面访问页面的时候 使用书签里面的页面
 
 
 ## 乐淘项目使用框架介绍
 
-  1. 移动端 UI使用的MUI框架 http://dev.dcloud.net.cn/mui/ui/
-  2. 字体图标使用 fontawesome专门的字体图标库 http://www.fontawesome.com.cn/faicons/
-  3. zeptoJS库 方便操作DOM元素 已经发送ajax请求 http://www.css88.com/doc/zeptojs_api/
-  4. 模板引擎 artTemplate  方便渲染数据到页面 https://aui.github.io/art-template/zh-cn/docs/index.html
-  5. PC端的 UI使用bootstrap  http://v3.bootcss.com/
-  6. less.js编译less文件 http://lesscss.cn/
+    1. 移动端 UI使用的MUI框架 http://dev.dcloud.net.cn/mui/ui/
+    2. 字体图标使用 fontawesome专门的字体图标库 http://www.fontawesome.com.cn/faicons/
+    3. zeptoJS库 方便操作DOM元素 已经发送ajax请求 http://www.css88.com/doc/zeptojs_api/
+    4. 模板引擎 artTemplate  方便渲染数据到页面 https://aui.github.io/art-template/zh-cn/docs/index.html
+    5. PC端的 UI使用bootstrap  http://v3.bootcss.com/
+    6. less.js编译less文件 http://lesscss.cn/
 
 ## letao-master整个项目的目录结构
 
-  1. .git 本地仓库文件夹
-  2. bin 项目启动的文件夹 》 www就是项目的启动文件(用来开启nodejs服务器)  www代码是node代码  开启了 nodejs的服务器 
-  3. docs 项目的文档文件夹 接口文档 书签 数据库sql文档
-  4. models node.js的数据模型文件 跟数据库的数据表对应的文件 用来增删改查当前的数据表
-  5. node_modules nodejs的项目依赖包文件夹 如果没有无法启动npm start   执行npm install下载依赖包
-  6. public 公开的公共的 前端公开的文件夹 分别是完整移动端 完整PC端 自写移动端 自写PC端
-  7. routes node.js的路由文件夹 路由就是匹配你的的url  返回前端需要的内容 可能是静态页面 也可能是数据
-  8. .gitignore git的忽略清单文件 把一些不需要被git管理的文件 忽略
-  9. app.js 项目的主入口文件 项目主页一样 app.js node.js里面的主页 
+    1. .git 本地仓库文件夹
+    2. bin 项目启动的文件夹 》 www就是项目的启动文件(用来开启nodejs服务器)  www代码是node代码  开启了 nodejs的服务器 
+    3. docs 项目的文档文件夹 接口文档 书签 数据库sql文档
+    4. models node.js的数据模型文件 跟数据库的数据表对应的文件 用来增删改查当前的数据表
+    5. node_modules nodejs的项目依赖包文件夹 如果没有无法启动npm start   执行npm install下载依赖包
+    6. public 公开的公共的 前端公开的文件夹 分别是完整移动端 完整PC端 自写移动端 自写PC端
+    7. routes node.js的路由文件夹 路由就是匹配你的的url  返回前端需要的内容 可能是静态页面 也可能是数据
+    8. .gitignore git的忽略清单文件 把一些不需要被git管理的文件 忽略
+    9. app.js 项目的主入口文件 项目主页一样 app.js node.js里面的主页 
       (概念和前端的index.html类似)
-  10. package.json npm 的包管理配置文件 当前项目依赖包
-  11. README.md 项目说明文档 写项目笔记
-  12. 电商项目.md 我写的项目笔记 
+    10. package.json npm 的包管理配置文件 当前项目依赖包
+    11. README.md 项目说明文档 写项目笔记
+    12. 电商项目.md 我写的项目笔记 
 
 
 ## 前端的目录 public里面的目录
 
-  1. mobile 完整版的移动端文件夹
-  2. manage 完整版 PC端文件夹
-  3. m 自写版移动端文件夹
-  4. admin 自写版的PC端文件夹
-  
+    1. mobile 完整版的移动端文件夹
+    2. manage 完整版 PC端文件夹
+    3. m 自写版移动端文件夹
+    4. admin 自写版的PC端文件夹
+
 ## 前端去那里写代码 怎么写代码 
-  1. 进入m里面去写代码  写移动端页面  
+    1. 进入m里面去写代码  写移动端页面  
       1. 保留 images 和 lib 图片和依赖包文件夹其余删掉
       2. 新建一个 index.html
-  2. 进入admin里面去写代码 写PC端页面  
+    2. 进入admin里面去写代码 写PC端页面  
       2. 保留images 和 lib 其他的删掉
       3. 新建一个login.html
 
 ## 项目如何访问( 强调一下只能使用这个网址访问项目)
-  1. 使用书签的方式
-  2. 或者直接访问地址
+    1. 使用书签的方式
+    2. 或者直接访问地址
      1. 乐淘完整版移动端 http://localhost:3000/mobile/index.html
      2. 乐淘完整版PC端 http://localhost:3000/manage/login.html
      3. 乐淘自写版移动端 http://localhost:3000/m/index.html
@@ -148,9 +150,9 @@ git push -u origin gh-pages 把本地仓库的代码提交到远程的gh-pages�
 
 ## 搭建乐淘移动端的首页
 
-  1. 创建首页index.html
-  2. 添加视口
-  3. 引包
+    1. 创建首页index.html
+    2. 添加视口
+    3. 引包
       <!-- 1. 引入mui的CSS文件 -->
       <link rel="stylesheet" href="lib/mui/css/mui.css">
       <!-- 2. 引入字体图标的CSS文件 -->
@@ -318,8 +320,8 @@ git push -u origin gh-pages 把本地仓库的代码提交到远程的gh-pages�
       <!-- 8. 引入主页的JS文件  自己写JS逻辑代码-->
       <script src="js/index.js"></script>
 
-  3. CSS在head中引入
-  4. JS在body结束标签上引入 (除了对页面加载有帮助的CSS)
+  9. CSS在head中引入
+  10. JS在body结束标签上引入 (除了对页面加载有帮助的CSS)
 
 
 9. 搭建乐淘首页
@@ -332,82 +334,82 @@ git push -u origin gh-pages 把本地仓库的代码提交到远程的gh-pages�
   6. 运动专区
   7. 男士专区
   8. 女士专区
-  布局主要使用MUI的栅格系统
+    布局主要使用MUI的栅格系统
 
 10. 轮播图插件 http://dev.dcloud.net.cn/mui/ui/#gallery
-    1. 写轮播图插件的结构
-      <div class="mui-slider">
-        <!-- 轮播图的图片容器 -->
-        <!-- 如果要添加无缝轮播图 轮播图图片容器要添加一个mui-slider-loop 类名 -->
-        <div class="mui-slider-group mui-slider-loop">
-            <!-- 图片要多放2个图片 第一张是最后一张 最后一张是第一张 第一张和最后一张要添加mui-slider-item-duplicate 类名 -->
-            <!--支持循环，需要重复图片节点-->
-            <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
-                    <img src="images/banner6.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner1.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner2.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner3.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner4.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner5.png" alt="">
-                </a>
-            </div>
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/banner6.png" alt="">
-                </a>
-            </div>
-            <!--支持循环，需要重复图片节点-->
-            <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
-                    <img src="images/banner1.png" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- 轮播图的小圆点容器 -->
-        <div class="mui-slider-indicator">
-            <div class="mui-indicator mui-active"></div>
-            <div class="mui-indicator"></div>
-            <div class="mui-indicator"></div>
-            <div class="mui-indicator"></div>
-            <div class="mui-indicator"></div>
-            <div class="mui-indicator"></div>
-        </div>
-      </div>
-    2. 一个大容器  里面一个图片容器 旁边小圆点容器
-    3. 如果需要无法轮播图 要给图片容器添加mui-slider-loop类名
-    4. 多放2张图 第一张是最后一张图标 最后一张是第一张图标 并且添加 mui-slider-item-duplicate
-    5. 轮播图默认无法自动轮播图 要调用JS初始化轮播图
-        //获得slider插件对象
-        var gallery = mui('.mui-slider');
-        //调用slider初始化轮播图
-        gallery.slider({
-            //自动轮播图的间隔时间
-            interval: 1000 
-        });
-  
+   1. 写轮播图插件的结构
+     <div class="mui-slider">
+       <!-- 轮播图的图片容器 -->
+       <!-- 如果要添加无缝轮播图 轮播图图片容器要添加一个mui-slider-loop 类名 -->
+       <div class="mui-slider-group mui-slider-loop">
+           <!-- 图片要多放2个图片 第一张是最后一张 最后一张是第一张 第一张和最后一张要添加mui-slider-item-duplicate 类名 -->
+           <!--支持循环，需要重复图片节点-->
+           <div class="mui-slider-item mui-slider-item-duplicate">
+               <a href="#">
+                   <img src="images/banner6.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner1.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner2.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner3.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner4.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner5.png" alt="">
+               </a>
+           </div>
+           <div class="mui-slider-item">
+               <a href="#">
+                   <img src="images/banner6.png" alt="">
+               </a>
+           </div>
+           <!--支持循环，需要重复图片节点-->
+           <div class="mui-slider-item mui-slider-item-duplicate">
+               <a href="#">
+                   <img src="images/banner1.png" alt="">
+               </a>
+           </div>
+       </div>
+       <!-- 轮播图的小圆点容器 -->
+       <div class="mui-slider-indicator">
+           <div class="mui-indicator mui-active"></div>
+           <div class="mui-indicator"></div>
+           <div class="mui-indicator"></div>
+           <div class="mui-indicator"></div>
+           <div class="mui-indicator"></div>
+           <div class="mui-indicator"></div>
+       </div>
+     </div>
+   2. 一个大容器  里面一个图片容器 旁边小圆点容器
+   3. 如果需要无法轮播图 要给图片容器添加mui-slider-loop类名
+   4. 多放2张图 第一张是最后一张图标 最后一张是第一张图标 并且添加 mui-slider-item-duplicate
+   5. 轮播图默认无法自动轮播图 要调用JS初始化轮播图
+       //获得slider插件对象
+       var gallery = mui('.mui-slider');
+       //调用slider初始化轮播图
+       gallery.slider({
+           //自动轮播图的间隔时间
+           interval: 1000 
+       });
+
 11. 区域滚动插件的使用 http://dev.dcloud.net.cn/mui/ui/#scroll
-  
+
     1. 写区域滚动的结构 
           1 个父容器 <div class="mui-scroll-wrapper"></div>
           1 个子容器 <div class="mui-scroll"></div>
