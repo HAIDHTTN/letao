@@ -1,6 +1,6 @@
 ### 总结
 
-<--- 更新--->
+<--- 更新二次--->
 
 1. 了解git的克隆和获取代码
 2. 了解项目的架构和目录结构
@@ -337,76 +337,76 @@ git push -u origin gh-pages 把本地仓库的代码提交到远程的gh-pages�
     布局主要使用MUI的栅格系统
 
 10. 轮播图插件 http://dev.dcloud.net.cn/mui/ui/#gallery
-   1. 写轮播图插件的结构
-     <div class="mui-slider">
-       <!-- 轮播图的图片容器 -->
-       <!-- 如果要添加无缝轮播图 轮播图图片容器要添加一个mui-slider-loop 类名 -->
-       <div class="mui-slider-group mui-slider-loop">
-           <!-- 图片要多放2个图片 第一张是最后一张 最后一张是第一张 第一张和最后一张要添加mui-slider-item-duplicate 类名 -->
-           <!--支持循环，需要重复图片节点-->
-           <div class="mui-slider-item mui-slider-item-duplicate">
-               <a href="#">
-                   <img src="images/banner6.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner1.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner2.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner3.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner4.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner5.png" alt="">
-               </a>
-           </div>
-           <div class="mui-slider-item">
-               <a href="#">
-                   <img src="images/banner6.png" alt="">
-               </a>
-           </div>
-           <!--支持循环，需要重复图片节点-->
-           <div class="mui-slider-item mui-slider-item-duplicate">
-               <a href="#">
-                   <img src="images/banner1.png" alt="">
-               </a>
-           </div>
-       </div>
-       <!-- 轮播图的小圆点容器 -->
-       <div class="mui-slider-indicator">
-           <div class="mui-indicator mui-active"></div>
-           <div class="mui-indicator"></div>
-           <div class="mui-indicator"></div>
-           <div class="mui-indicator"></div>
-           <div class="mui-indicator"></div>
-           <div class="mui-indicator"></div>
-       </div>
-     </div>
-   2. 一个大容器  里面一个图片容器 旁边小圆点容器
-   3. 如果需要无法轮播图 要给图片容器添加mui-slider-loop类名
-   4. 多放2张图 第一张是最后一张图标 最后一张是第一张图标 并且添加 mui-slider-item-duplicate
-   5. 轮播图默认无法自动轮播图 要调用JS初始化轮播图
-       //获得slider插件对象
-       var gallery = mui('.mui-slider');
-       //调用slider初始化轮播图
-       gallery.slider({
-           //自动轮播图的间隔时间
-           interval: 1000 
-       });
+  1. 写轮播图插件的结构
+    <div class="mui-slider">
+      <!-- 轮播图的图片容器 -->
+      <!-- 如果要添加无缝轮播图 轮播图图片容器要添加一个mui-slider-loop 类名 -->
+      <div class="mui-slider-group mui-slider-loop">
+          <!-- 图片要多放2个图片 第一张是最后一张 最后一张是第一张 第一张和最后一张要添加mui-slider-item-duplicate 类名 -->
+          <!--支持循环，需要重复图片节点-->
+          <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                  <img src="images/banner6.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner1.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner2.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner3.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner4.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner5.png" alt="">
+              </a>
+          </div>
+          <div class="mui-slider-item">
+              <a href="#">
+                  <img src="images/banner6.png" alt="">
+              </a>
+          </div>
+          <!--支持循环，需要重复图片节点-->
+          <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                  <img src="images/banner1.png" alt="">
+              </a>
+          </div>
+      </div>
+      <!-- 轮播图的小圆点容器 -->
+      <div class="mui-slider-indicator">
+          <div class="mui-indicator mui-active"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+      </div>
+    </div>
+  2. 一个大容器  里面一个图片容器 旁边小圆点容器
+  3. 如果需要无法轮播图 要给图片容器添加mui-slider-loop类名
+  4. 多放2张图 第一张是最后一张图标 最后一张是第一张图标 并且添加 mui-slider-item-duplicate
+  5. 轮播图默认无法自动轮播图 要调用JS初始化轮播图
+      //获得slider插件对象
+      var gallery = mui('.mui-slider');
+      //调用slider初始化轮播图
+      gallery.slider({
+          //自动轮播图的间隔时间
+          interval: 1000 
+      });
 
 11. 区域滚动插件的使用 http://dev.dcloud.net.cn/mui/ui/#scroll
 

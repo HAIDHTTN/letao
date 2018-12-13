@@ -1,0 +1,142 @@
+@import "base.less";
+body {
+    background-color: #fff;
+    padding: .45rem 0rem;
+}
+#main {
+    #nav {
+        padding: .1rem;
+        >ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 33.33%;
+                a {
+                    display: block;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+    #banner {
+        padding: 0rem .1rem;
+        display: flex;
+        height: 2.4rem;
+        .box-left {
+            flex: 2;
+            .box-top, .box-bottom {
+                background-color: pink;
+                a {
+                    width: 100%;
+                    font-size: 0rem;
+                    img {
+                        width: 50%;
+                    }
+                }
+            }          
+        }
+        .box-right {
+            flex: 1;
+            a {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #brand {
+        padding: .1rem;
+        .brand-title {
+            img {
+                width: 100%;
+            }
+        }
+        .brand-content {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 25%;
+                    a {
+                        img {
+                            width: 100%;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    #sport {
+        padding: .1rem;
+        .sport-title {
+            img {
+                width: 100%;
+            }
+        }
+        .sport-content {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    padding: 10px 2px;
+                    text-align: center;
+                    box-shadow: 0rem 0rem .04rem #ccc;
+                    width: 1.72rem;
+                    margin-top: .1rem;
+                    a {
+                        img {
+                            width: 100%;    
+                        }
+                        p:nth-of-type(2){
+                           span:nth-of-type(1) {             
+                                color: red;
+                           }                         
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #woman,#man {
+        padding: .1rem;
+        .title {
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    padding: 10px 2px;
+                    text-align: center;
+                    box-shadow: 0rem 0rem .04rem #ccc;
+                    width: 1.72rem;
+                    margin-top: .1rem;
+                    a {
+                        img {
+                            width: 100%;                        
+                        }
+                        p:nth-of-type(2){
+                            span:nth-of-type(1) {             
+                                 color: red;
+                            }                         
+                         }
+                    }
+                }
+            }
+        }
+    }   
+}

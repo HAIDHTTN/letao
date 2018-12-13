@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+#header {
+  height: .45rem;
+  background-color: #006699;
+  padding: 0rem .45rem;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: 999;
+  width: 100vw;
+}
+#header h4 {
+  text-align: center;
+  line-height: .45rem;
+  margin: 0rem;
+  font-size: .18rem;
+  color: #fff;
+}
+#header a {
+  width: .45rem;
+  height: .45rem;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  text-align: center;
+  line-height: .45rem;
+  color: #fff;
+}
+#footer {
+  background-color: #006699;
+  width: 100vw;
+  height: .45rem;
+  position: fixed;
+  z-index: 999;
+  bottom: 0rem;
+  left: 0rem;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  flex: 1;
+}
+#footer ul li a {
+  text-align: center;
+  color: #fff;
+}
+#footer ul li a i.fa {
+  margin-left: .4rem;
+  text-rendering: auto;
+}
+#footer ul li a p {
+  color: #fff;
+}
+#footer ul li.active a {
+  color: orange;
+}
+#footer ul li.active p {
+  color: orange;
+}
+body {
+  background-color: #fff;
+  padding: .45rem 0rem;
+}
+#main #nav {
+  padding: .1rem;
+}
+#main #nav > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main #nav > ul li {
+  width: 33.33%;
+}
+#main #nav > ul li a {
+  display: block;
+  width: 100%;
+}
+#main #nav > ul li a img {
+  width: 100%;
+}
+#main #banner {
+  padding: 0rem .1rem;
+  display: flex;
+  height: 2.4rem;
+}
+#main #banner .box-left {
+  flex: 2;
+}
+#main #banner .box-left .box-top,
+#main #banner .box-left .box-bottom {
+  background-color: pink;
+}
+#main #banner .box-left .box-top a,
+#main #banner .box-left .box-bottom a {
+  width: 100%;
+  font-size: 0rem;
+}
+#main #banner .box-left .box-top a img,
+#main #banner .box-left .box-bottom a img {
+  width: 50%;
+}
+#main #banner .box-right {
+  flex: 1;
+}
+#main #banner .box-right a {
+  width: 100%;
+}
+#main #banner .box-right a img {
+  width: 100%;
+}
+#main #brand {
+  padding: .1rem;
+}
+#main #brand .brand-title img {
+  width: 100%;
+}
+#main #brand .brand-content ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main #brand .brand-content ul li {
+  width: 25%;
+}
+#main #brand .brand-content ul li a img {
+  width: 100%;
+}
+#main #sport {
+  padding: .1rem;
+}
+#main #sport .sport-title img {
+  width: 100%;
+}
+#main #sport .sport-content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main #sport .sport-content ul li {
+  padding: 10px 2px;
+  text-align: center;
+  box-shadow: 0rem 0rem .04rem #ccc;
+  width: 1.72rem;
+  margin-top: .1rem;
+}
+#main #sport .sport-content ul li a img {
+  width: 100%;
+}
+#main #sport .sport-content ul li a p:nth-of-type(2) span:nth-of-type(1) {
+  color: red;
+}
+#main #woman,
+#main #man {
+  padding: .1rem;
+}
+#main #woman .title img,
+#main #man .title img {
+  width: 100%;
+}
+#main #woman .content ul,
+#main #man .content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#main #woman .content ul li,
+#main #man .content ul li {
+  padding: 10px 2px;
+  text-align: center;
+  box-shadow: 0rem 0rem .04rem #ccc;
+  width: 1.72rem;
+  margin-top: .1rem;
+}
+#main #woman .content ul li a img,
+#main #man .content ul li a img {
+  width: 100%;
+}
+#main #woman .content ul li a p:nth-of-type(2) span:nth-of-type(1),
+#main #man .content ul li a p:nth-of-type(2) span:nth-of-type(1) {
+  color: red;
+}
