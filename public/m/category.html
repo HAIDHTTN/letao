@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类</title>
+    <!-- 引入MUI的CSS包 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 引入fontawsome字体图标库CSS文件 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入less文件 -->
+    <link rel="stylesheet/less" href="less/category.less">
+    <!-- 引入less.js编译文件 -->
+    <script src="lib/less/less.js"></script>
+    <script src="js/fontsize.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div id="header">
+        <a href="#">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <form action="">
+            <input type="search" name="" id="" placeholder="请输入要搜索的商品">
+        </form>
+        <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+    </div>
+    <!-- 主题区域 -->
+    <div id="main">
+        <div class="box-left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- 这里放置真实显示的DOM内容 -->
+                    <ul>
+                        <li class="active"><a href="">运动馆</a></li>
+                        <li><a href="">女士官</a></li>
+                        <li><a href="">男士管</a></li>
+                        <li><a href="">范不管</a></li>
+                        <li><a href="">胡外观</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box-right">
+                <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!--这里放置真实显示的DOM内容-->
+                            <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/brand1.png" alt="">
+                                            <p>耐克</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+            
+        </div>
+    </div>
+
+    <!-- 尾部区域 -->
+    <div id="footer">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>
+                    <p>首页</p>
+                </a></li>
+            <li><a href="#"><i class="fa fa-bars"></i>
+                    <p>分类</p>
+                </a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i>
+                    <p>购物车</p>
+                </a></li>
+            <li><a href="#"><i class="fa fa-user"></i>
+                    <p> 会员中心</p>
+                </a></li>
+        </ul>
+    </div>
+
+
+    <!-- 引入zepto的js发送请求之类的和获取元素添加事件之类的 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUI的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 artTemplate template-web.js是最新4.0的简洁版 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 3.0模板引擎简洁包 -->
+    <!-- <script src="lib/artTemplate/template.js"></script> -->
+    <!-- 3.0模板引擎的原生包 -->
+    <!-- <script src="lib/artTemplate/template-native.js"></script> -->
+    <script src="js/category.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+#header {
+  height: .45rem;
+  background-color: #006699;
+  padding: 0rem .45rem;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: 999;
+  width: 100vw;
+}
+#header h4 {
+  text-align: center;
+  line-height: .45rem;
+  margin: 0rem;
+  font-size: .18rem;
+  color: #fff;
+}
+#header a {
+  width: .45rem;
+  height: .45rem;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  text-align: center;
+  line-height: .45rem;
+  color: #fff;
+}
+#footer {
+  background-color: #006699;
+  width: 100vw;
+  height: .45rem;
+  position: fixed;
+  z-index: 999;
+  bottom: 0rem;
+  left: 0rem;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  flex: 1;
+  height: .45rem;
+}
+#footer ul li a {
+  display: block;
+  width: 100%;
+  height: .45rem;
+  text-align: center;
+  color: #fff;
+  font-size: .12rem;
+}
+#footer ul li a i {
+  vertical-align: bottom;
+}
+#footer ul li a p {
+  display: block;
+  color: #fff;
+  margin-bottom: 0rem;
+  font-size: .12rem;
+  line-height: 0.12rem;
+}
+#footer ul li.active a {
+  color: orange;
+}
+#footer ul li.active a p {
+  color: orange;
+}
+body {
+  background-color: #ccc;
+  padding: .45rem 0rem;
+  height: 100vh;
+}
+#header a:nth-of-type(1) {
+  left: 0rem;
+  top: 0rem;
+}
+#header form {
+  margin-top: .04rem;
+}
+#header form input {
+  background-color: #fff;
+  font-size: .14rem;
+  margin: 0rem;
+  text-align: left;
+}
+#main {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+#main .box-left {
+  width: .8rem;
+  position: relative;
+}
+#main .box-left .mui-scroll-wrapper .mui-scroll ul {
+  min-height: 5.88rem;
+}
+#main .box-left .mui-scroll-wrapper .mui-scroll ul li {
+  background-color: #fff;
+  border-bottom: .01rem solid #efeff4;
+}
+#main .box-left .mui-scroll-wrapper .mui-scroll ul li a {
+  display: block;
+  width: 100%;
+  height: .45rem;
+  text-align: center;
+  line-height: .45rem;
+  font-size: .14rem;
+  color: #666;
+}
+#main .box-left .mui-scroll-wrapper .mui-scroll ul li.active a {
+  color: #006699;
+  background-color: #ccc;
+}
+#main .box-right {
+  flex: 1;
+  padding: .1rem;
+  position: relative;
+}
+#main .box-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 5.88rem;
+  align-content: flex-start;
+}
+#main .box-right ul li {
+  background-color: #fff;
+  width: 33.33%;
+}
+#main .box-right ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#main .box-right ul li a img {
+  width: 100%;
+}

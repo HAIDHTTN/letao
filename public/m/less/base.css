@@ -50,21 +50,29 @@ img {
 }
 #footer ul li {
   flex: 1;
+  height: .45rem;
 }
 #footer ul li a {
+  display: block;
+  width: 100%;
+  height: .45rem;
   text-align: center;
   color: #fff;
+  font-size: .12rem;
 }
-#footer ul li a i.fa {
-  margin-left: .4rem;
-  text-rendering: auto;
+#footer ul li a i {
+  vertical-align: bottom;
 }
 #footer ul li a p {
+  display: block;
   color: #fff;
+  margin-bottom: 0rem;
+  font-size: .12rem;
+  line-height: 0.12rem;
 }
 #footer ul li.active a {
   color: orange;
 }
-#footer ul li.active p {
+#footer ul li.active a p {
   color: orange;
 }

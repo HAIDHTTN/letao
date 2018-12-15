@@ -10,6 +10,9 @@ li {
 img {
     vertical-align: middle;
 }
+// body {
+//     line-height: normal;
+// }
 
 #header {
     height: .45rem;
@@ -52,25 +55,35 @@ img {
 
         li {
             flex: 1;
-            a {
+            height: .45rem;
+           
+            a {  
+                display: block;
+                width: 100%;
+                height: .45rem;
                 text-align: center;
                 color: #fff;
-                i.fa {
-                    margin-left: .4rem;
-                    text-rendering: auto;
+                font-size: .12rem;
+                i {
+                    vertical-align: bottom;
                 }
                 p {
+                    display: block;
                     color: #fff;
+                    margin-bottom: 0rem;
+                    font-size: .12rem;
+                    line-height: .12rem
                 }
                 
             }
             &.active {
                 a {
                     color: orange;
+                    p {
+                        color: orange;
+                    }
                 }
-                p {
-                    color: orange;
-                }
+                
                 
             }
         }
